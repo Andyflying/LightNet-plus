@@ -1,6 +1,6 @@
-# **LightNet++: A Dual-Source Lightning Forecasting Network with Bi-direction Spatiotemporal Transformation**
+# **LightNet+: A Dual-Source Lightning Forecasting Network with Bi-direction Spatiotemporal Transformation**
 
-This is the origin Pytorch implementation of LightNet++.
+This is the origin Pytorch implementation of LightNet+.
 
 ## Requirements
 
@@ -25,7 +25,7 @@ This is the origin Pytorch implementation of LightNet++.
 **layers**           　　　　        \# Define structure of all models.  <br>
 　|-ablation.py　　　　\# The ablation study code.   <br>
 　|-ConvLSTM.py　　　　\# The code of ConvLSTM.  <br>
-　|-LightNet_plusplus.py　　　　\# The code of LightNet++.   <br>
+　|-LightNet_plus.py　　　　\# The code of LightNet++.   <br>
 　|-transformer_decoder.py　　　　\# The code of transformer decoder.   <br>
 
 config.py					　　　　# The script to read configuration file.  <br>
