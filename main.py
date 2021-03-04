@@ -6,15 +6,15 @@ import torch.nn as nn
 from torch.utils.data import DataLoader
 import datetime
 from config import read_config
-from layers.LightNet_plusplus import LightNet_plusplus_Model
+from layers.LightNet_plus import LightNet_plus_Model
 from layers.ablation import Ablation_without_T, Ablation_without_W, Ablation_without_WandT
 from generator import DataGenerator
 from scores import Model_eval
 
 
 def selectModel(config_dict):
-    if config_dict['NetName'] == 'LightNet_plusplus':
-        model = LightNet_plusplus_Model(obs_tra_frames=config_dict['TruthHistoryHourNum'], obs_channels=1,
+    if config_dict['NetName'] == 'LightNet_plus':
+        model = LightNet_plus_Model(obs_tra_frames=config_dict['TruthHistoryHourNum'], obs_channels=1,
                                      wrf_tra_frames=config_dict['ForecastHourNum'],
                                      wrf_channels=config_dict['WRFChannelNum'], config_dict=config_dict).to(
             config_dict['Device'])
